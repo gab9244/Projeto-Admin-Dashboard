@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+:root{
+   --cor0:#1992D4
+}
+
+
+.Icon{
+    position: relative;
+    top: 5px;
+    width: 25px;
+    margin-right: 10px;
+}
+#communities{
+    margin-bottom: 50px;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;   
+    padding: 0;
+}
+aside {
+    display:flex;
+    grid-area: 1/1/4/1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor0);
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px;
+    
+    
+    
+}
+#Dashboard {
+    
+   margin-bottom: 20px;
+   
+}
+#DashboardTitle{
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+ 
+}
+#dashboardIcon {
+    width: 40px;
+}
+header{
+   display: grid;
+   grid-area: 1/2/1/4;
+   box-shadow: 4px -1px 7px 2px;
+}
+input{
+    width: 40vw;
+    border-radius: 10px;
+    margin-right: 15vw;
+    background-color: #D1D7DE;
+    border: none;
+    height: 4vh;
+}
+#little {
+    width: 40px;
+}
+#inputLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#magnify{
+    position: relative;
+    bottom: 1px;
+    width: 25px;
+    right: 10px;
+}
+#secondPart{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 10%;
+    align-items: center;
+}
+.githubIcon{
+    width: 60px;
+}
+#myname{
+    margin-right: 30%;
+}
+.myName {
+    font-weight:bold;
+}
+button {
+    border: none;
+    background-color: var(--cor0);
+    color: white;
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+button:focus{
+    border: 1px solid black;
+}
+main {
+    background-color: #D1D7DE;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+   
+}
+#left{
+    display: grid;
+    grid-area: 2/1;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    background: white;
+    border-left: 10px solid var(--cor0);
+    border-radius: 10px;
+}
+h4 {
+    padding: 10px;
+}
+.littleText{
+    font-size: 12px;
+}
