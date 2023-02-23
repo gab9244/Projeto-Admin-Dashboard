@@ -23,13 +23,14 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 3fr;   
     padding: 0;
+    height: 25vh;
 }
 aside {
-    display:flex;
+    display: flex;
     grid-area: 1/1/4/1;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: var(--cor0);
+    justify-content: center;
 
 }
 
@@ -57,9 +58,13 @@ nav {
     width: 40px;
 }
 header{
-   display: grid;
-   grid-area: 1/2/1/4;
-   box-shadow: 4px -1px 7px 2px;
+    display: grid;
+    grid-area: 1/2/1/4;
+    box-shadow: 4px -1px 7px 2px;
+    align-items: start;
+    padding-top: 10px;
+    height: 20vh;
+
 }
 input{
     width: 40vw;
@@ -114,9 +119,13 @@ button:focus{
 main {
     background-color: #D1D7DE;
     padding: 40px;
+    gap: 20px;
     display: grid;
     grid-template-columns: 3fr 1fr;
    
+}
+main div {
+    border-radius: 10px;
 }
 #left{
     display: grid;
@@ -127,15 +136,46 @@ main {
 .block {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+ 
     padding: 20px;
     background: white;
     border-left: 10px solid var(--cor0);
     border-radius: 10px;
 }
+.block div {
+    display: flex;
+    justify-content: flex-end;
+    
+}
 h4 {
-    padding: 10px;
+    padding-bottom: 10px;
 }
 .littleText{
     font-size: 12px;
+    color: rgb(100, 99, 99);
+}
+#Announcements{
+    background-color:white;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+#Announcements h5{
+    padding-top: 20px;
+}
+#trend{
+    padding-bottom: 10px;
+}
+#people {
+    background-color:white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.person {
+    display:flex;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
